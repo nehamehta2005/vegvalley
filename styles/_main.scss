@@ -1,0 +1,115 @@
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    .firstsection {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/header-background.png);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        h2 {
+            color: white;
+            margin-top: 20rem;
+            font-size: 3rem;
+            display: inline-block;
+            text-shadow: 0 0 20px #000000, 0 0 30px #49ff18, 0 0 40px #49ff18,
+                0 0 55px #49ff18, 2px 2px 2px rgba(206, 89, 55, 0);
+            animation: move 3s linear;
+        }
+
+        @keyframes move {
+            from {
+                transform: translatex(100%);
+            }
+        }
+
+        .flower {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            width: 100%;
+            height: 6rem;
+            gap: 1rem;
+
+            .flower1,
+            .flower2 {
+                background: radial-gradient(ellipse at center, #90c56d00  0%,  #79b353b5 30%,#6bb33b6a 56%, #6ea44900 100%);
+                height: 100%;
+                border-radius: 50%;
+                animation: flower 3s linear;
+            }
+
+            @keyframes flower {
+                0% {
+                    transform: translatey(80%);
+                }
+            }
+        }
+    }
+
+    .secondsection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .plum {
+            background-image: url(../images/plum.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .quote {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 2rem;
+            padding: 1rem;
+
+            .quotetext {
+                position: relative;
+                padding-top: 3rem;
+                padding-left: 10rem;
+            }
+
+            .quotetext::before {
+
+                content: " \f10e";
+                font: var(--fa-font-solid);
+                margin-right: 2rem;
+                font-size: 5em;
+                position: absolute;
+                top: 30%;
+                left: 0;
+            }
+        }
+
+        .name {
+            font-family: "Mr Dafoe", cursive;
+
+            .fullname {
+                font-size: 4rem;
+                text-align: end;
+                margin: 2rem 5rem 0 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    /*mobile*/
+    .plum {
+        display: none;
+    }
+    .quote {
+        grid-area: 1/1/2/3;
+        padding-left: 10rem;
+    }
+    .quotetext {
+        position: relative;
+        padding: 6rem;
+    }
+}

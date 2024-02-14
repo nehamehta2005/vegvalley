@@ -1,0 +1,115 @@
+hgroup {
+  width: 100%;
+
+
+  header {
+    display: grid;
+    grid-template-columns: 10rem 1fr 20rem;
+    background: linear-gradient(to bottom, #639233, #d1f8d8, white);
+    align-items: center;
+    justify-content: center;
+
+    .menu-bar {
+      width: 10rem;
+      height: 10rem;
+      font-size: 3rem;
+      outline: none;
+      border: none;
+      padding: 0.8rem;
+      color: #415b30;
+      background-color: inherit;
+      transition: all 0.5s ease;
+
+      .menubar-item {
+        display: none;
+        text-align: left;
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(5px);
+        background-color: rgba(128, 128, 128, 0.5);
+        padding: 0.5rem;
+        li {
+          padding: 2rem;
+          a{
+          text-decoration: none;
+          color: white;
+          margin-right: 1rem;
+           }
+          }
+          .close{
+            font-size: 5rem;
+            position: absolute;
+            right: 1rem;
+            top: 0.1rem;
+          }
+      }
+    }
+
+    .logo {
+      a {
+        img {
+          margin-left: 2rem;
+          width: 10rem;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .header-nav {
+
+      .nav-item {
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+
+        li {
+          padding: 0 4rem;
+
+          a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: $fontcolor;
+          }
+        }
+      }
+    }
+
+    .button {
+      grid-area: 1/3/2/4;
+      background-color: #415b304d;
+      margin: 2rem;
+      padding: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      font-family: "Merriweather", serif;
+
+      a {
+        text-decoration: none;
+        color: #415b30;
+      }
+
+    }
+  }
+}
+
+header:hover .menu-bar ul {
+  display: block;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+  /*tablet*/
+
+  .header-nav {
+    display: none;
+  }
+}
+
+ @media (min-width: 768px){
+   .menu-bar{
+   display: none;
+  }
+}

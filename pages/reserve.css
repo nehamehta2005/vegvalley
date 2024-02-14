@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+main {
+  font-family: "Merriweather", serif;
+  color: #415b30;
+  margin: 2rem auto;
+  padding: 10rem;
+}
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+.reservation {
+  width: 50%;
+  margin: 5rem auto;
+}
+
+label,
+input {
+  height: 2rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+input,
+textarea {
+  width: 98%;
+  display: block;
+  margin-left: 1rem;
+}
+textarea {
+  margin-top: 1rem;
+}
+button {
+  border: none;
+  color: #415b30;
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+  background: none;
+  padding: 2rem 1rem;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Valley</title>
+    <link rel="stylesheet" href="./reserve.css">
+</head>
+
+<body>
+    <main>
+        <h1>Reserve a table</h1>
+        <form action="https://formspree.io/f/moqzrwaw" method="POST">
+            <div class="reservation">
+
+                <label for="fname">Name</label>
+                <input type="text" name="fname">
+
+                <label for="email">Email</label>
+                <input type="email" name='email'>
+                <label for="tel">Telephone Number</label>
+                <input type="tel">
+                <label for="date">Date</label>
+                <input type='date'>
+                <label for="time">Time</label>
+                <input type='time'>
+                <label for="number">No. of guests</label>
+                <input type="number">
+                <label for="comments">Special Requests</label>
+                <textarea name="comments" id="" cols="50" rows="5"></textarea>
+                <button class="btn btn-submit">Send</button>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+$fontcolor: #415b30;
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Merriweather", serif;
+  display: grid;
+  grid-template-rows:10rem 1fr 15rem ;
+  color: $fontcolor
+}
+
+@import "./header";
+@import "./main";
+@import "./footer";
